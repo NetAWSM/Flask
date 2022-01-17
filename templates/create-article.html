@@ -1,15 +1,30 @@
-{% extends 'base.html' %}
-
-{% block title %}About page{% endblock %}
-
-{% block body %}
+{% extends 'base.html' %} {% block title %}About page{% endblock %} {% block
+body %}
 <div class="container mt-5">
-    <h1>Добавление статьи</h1>
-    <form method="post">
-        <input type="text" name="title" id="title" class="form-control" placeholder="Введите название"><br>
-        <textarea name="intro" id="intro" class="form-control" placeholder="Введите ананос"></textarea><br>
-        <textarea name="text" id="text" class="form-control" placeholder="Введите основной текст"></textarea><br>
-        <input type="submit" class="btn btn-success" value="Отправить">
-    </form>
+  <h1>Добавление таблицы</h1>
+  <form method="post">
+    <input
+      type="text"
+      name="title"
+      id="title"
+      class="form-control"
+      placeholder="Введите наименование принтера"
+    /><br />
+    <textarea
+      name="intro"
+      id="intro"
+      class="form-control"
+      placeholder="Введите наименвоание картирджа"
+    ></textarea
+    ><br />
+    <textarea
+      name="text"
+      id="text"
+      class="form-control"
+      placeholder="Введите колличество на остатке"
+    ></textarea
+    ><br />
+    <input type="submit" class="btn btn-success" value="Отправить" />
+  </form>
 </div>
 {% endblock %}

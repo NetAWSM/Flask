@@ -26,9 +26,9 @@ def index():
     return render_template("index.html")
 
 
-@app.route('/about')
-def about():
-    return render_template("about.html")
+@app.route('/table')
+def table():
+    return render_template("table.html")
 
 
 @app.route('/create-article', methods=['POST', 'GET'])
